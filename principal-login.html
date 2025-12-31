@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Principal Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      width: 360px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #2e86de;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #1b4f72;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Principal Login</h2>
+    <form action="#" method="post">
+      <label for="username">Principal ID</label>
+      <input type="text" id="username" name="username" placeholder="Enter ID" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <div class="footer">
+      &copy; 2025 School Management System
+    </div>
+  </div>
+
+</body>
+</html>
